@@ -12,4 +12,4 @@ for i in 1..times
   end
   ans = ans + input
 end
- p ans
+  p ans

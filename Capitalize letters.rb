@@ -7,7 +7,7 @@ str = gets.chomp.split("")
 # p str
 # ["t", "h", "i", "s", " ", "i", "s", " ", "a", " ", "p", "e", "n"]
 str.each_with_index do |s,t|
-     #文字列の客観的なインデックス番号がt
+    #文字列の客観的なインデックス番号がt
     if t >= (a - 1) && t <= (b - 1)
         print s.upcase
     else 
