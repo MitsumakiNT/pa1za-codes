@@ -1,3 +1,4 @@
+#宝くじ当選判定プログラム
 lucky = gets.to_i #当選番号
 
 second = lucky % 10000#２等当選番号しも４桁
@@ -19,6 +20,6 @@ for i in 1..num
       elsif buy_third == third
       puts "third" #三等
   else 
-      puts "blank"
+      puts "blank" #はずれ
   end
 end
