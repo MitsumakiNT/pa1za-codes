@@ -19,3 +19,6 @@ line = gets.to_i
 
 # １行に複数要素を取得
 line = gets.split(' ').map(&:to_i)
+
+# 複数行に１行ずつ要素を取得
+line = readlines.map(&:to_i)
