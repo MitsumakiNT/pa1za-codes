@@ -9,3 +9,7 @@ lines = []
 while line = gets
     lines << line.chomp.split(' ')
 end
+
+# または
+
+lines = readlines(chomp: true).map{|line| line.split(' ')}
