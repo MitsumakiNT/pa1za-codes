@@ -29,3 +29,6 @@ while line = gets
     lines << line.chomp.split(' ').map(&:to_i)
 end
 p lines
+
+# または
+lines = readlines(chomp: true).map{|line| line.split(' ').map(&:to_i)}
