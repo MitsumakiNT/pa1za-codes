@@ -13,3 +13,6 @@ end
 # または
 
 lines = readlines(chomp: true).map{|line| line.split(' ')}
+
+# １行から数値として取得
+line = gets.to_i
