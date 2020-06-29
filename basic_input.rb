@@ -16,3 +16,6 @@ lines = readlines(chomp: true).map{|line| line.split(' ')}
 
 # １行から数値として取得
 line = gets.to_i
+
+# １行に複数要素を取得
+line = gets.split(' ')
