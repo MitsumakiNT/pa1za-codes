@@ -6,3 +6,5 @@ array1 = [10,20,30]
 array2 = [40,50,60]
 
 p join_arrays(array1,array2) 
+
+# 出力結果は配列の配列
