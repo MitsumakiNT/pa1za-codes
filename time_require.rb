@@ -17,3 +17,6 @@ p date.strftime("%Y-%m-%d(%a)")
 
 # タイムゾーンを付与
 p date.strftime("%Y-%m-%d %H:%M:%S %Z")
+
+# 曜日、月、日付 時間
+p date.strftime("%a %b %d %H:%M:%S %Z %Y")
