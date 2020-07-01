@@ -5,3 +5,6 @@ date = DateTime.now
 p date.strftime("%Y年%m月%d日")
 
 p date.strftime("%y年%m月%d日")
+
+# 日/月/年(2桁)
+p date.strftime("%x")
