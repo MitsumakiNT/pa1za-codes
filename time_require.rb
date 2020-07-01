@@ -1,5 +1,5 @@
 require 'date'
-date = DateTime.now
+date = DateTime.now #現在datetimeオブジェクトというrubyに内臓されているオブジェクトを呼び出す
 
 # 年月日
 p date.strftime("%Y年%m月%d日")
