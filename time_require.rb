@@ -20,3 +20,7 @@ p date.strftime("%Y-%m-%d %H:%M:%S %Z")
 
 # 曜日、月、日付 時間
 p date.strftime("%a %b %d %H:%M:%S %Z %Y")
+
+# 曜日を日本語に変更する場合
+dw = ["日", "月", "火", "水", "木", "金", "土"]
+p date.strftime("%Y/%m/%d(#{dw[date.wday]})")
