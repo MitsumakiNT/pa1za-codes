@@ -1,6 +1,8 @@
 money = {japan: "yen"}
 others = { china: "yuan", us: "dollar", germany: "euro"}
 
-currencies.merge(others)
+currencies.merge!(others)
+
+currencies
 
 
