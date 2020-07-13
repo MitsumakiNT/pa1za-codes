@@ -32,7 +32,7 @@ int = gets.to_i
 
 end
 
-# 非推奨
+# 非推奨（ループが発生しやすいため？）
 while i <= 30
     if i % 15 == 0
         puts "FizzBuzz"
