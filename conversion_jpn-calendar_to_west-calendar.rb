@@ -39,5 +39,7 @@ else
 end
     
     puts "#{gengou}年#{m}月#{d}日"
+
+    #別解を作った方が良さそう
     
     
