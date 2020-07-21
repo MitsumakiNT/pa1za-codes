@@ -21,7 +21,7 @@ $(function(){
     });
 
     if ($(".list").length === 0){
-      appendList("一致する果物はありませんでした");
+      appendList("");
     }
   });
 });
