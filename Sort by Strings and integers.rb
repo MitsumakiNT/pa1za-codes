@@ -7,8 +7,8 @@ array = {}
   array[line[1].to_i] = line[0]
 end
 
-array = array.sort
+na = array.sort
 
-array.each do |ele|
+na.each do |ele|
   puts ele[1]
 end
