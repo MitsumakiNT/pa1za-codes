@@ -18,4 +18,3 @@ end
 if a == 5
     puts "D"
 end
-    
