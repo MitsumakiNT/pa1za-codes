@@ -32,3 +32,7 @@ p lines
 
 # または
 lines = readlines(chomp: true).map{|line| line.split(' ').map(&:to_i)}
+
+string = "samurai"
+p string.rpartition("u")
+=> ["sam", "u", "rai"]
