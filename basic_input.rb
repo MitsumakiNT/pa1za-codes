@@ -36,3 +36,14 @@ lines = readlines(chomp: true).map{|line| line.split(' ').map(&:to_i)}
 string = "samurai"
 p string.rpartition("u")
 => ["sam", "u", "rai"]
+
+word_1 = "hot"
+word_2 = "hotter"
+word_3 = "hottest"
+
+p word_1 < word_2 => true
+p word_1 > word_2
+=> false
+p word_1 <= word_3 => true
+p word_1 >= word_2
+=> false
