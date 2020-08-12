@@ -44,6 +44,3 @@ word_3 = "hottest"
 p word_1 < word_2 => true
 p word_1 > word_2
 => false
-p word_1 <= word_3 => true
-p word_1 >= word_2
-=> false
