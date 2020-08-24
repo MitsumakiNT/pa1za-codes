@@ -56,3 +56,11 @@ p string.rpartition("u")
 # 文字列がない場合は空白文字を用いて分割される
 p string.rpartition("o")
 => ["", "", "samurai"]
+
+string_1 = "Hello"
+p string_1.empty?
+=> false
+
+string_2 = ""
+p string_2.empty?
+=> true
