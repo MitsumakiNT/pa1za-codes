@@ -49,3 +49,10 @@ string = "samurai, ruby, rails"
 p string.split(",")
 => ["samurai", " ruby", " rails"]
 
+string = "samurai"
+p string.rpartition("u")
+=> ["sam", "u", "rai"]
+
+# 文字列がない場合は空白文字を用いて分割される
+p string.rpartition("o")
+=> ["", "", "samurai"]
