@@ -94,3 +94,8 @@ p string.rindex("r")
 string = "samurai, ruby"
 p string.rindex("r", 5) # 末尾の5文字目から検索
 => 9 # 9文字目
+
+string = "さむらい"
+p string.ord
+=> 12373
+#文字コード
