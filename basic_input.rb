@@ -64,3 +64,7 @@ p string_1.empty?
 string_2 = ""
 p string_2.empty?
 => true
+
+string = "samurai, ruby"
+p string.start_with?("sa")
+=> true
