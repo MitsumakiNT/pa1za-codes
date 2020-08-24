@@ -44,3 +44,8 @@ word_3 = "hottest"
 p word_1 < word_2 => true
 p word_1 > word_2
 => false
+
+string = "samraui, ruby, rails"
+p string.split(",")
+=> ["samraui", " ruby", " rails"]
+
