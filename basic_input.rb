@@ -68,3 +68,7 @@ p string_2.empty?
 string = "samurai, ruby"
 p string.start_with?("sa")
 => true
+
+string = "samurai, ruby"
+p string.end_with?("by")
+=> true
