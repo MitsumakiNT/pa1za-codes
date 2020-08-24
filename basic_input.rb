@@ -76,3 +76,12 @@ p string.end_with?("by")
 string = "samurai, ruby"
 p string.include?("ruby")
 => true
+
+string = "samurai, ruby"
+p string.index("r")
+=> 4   # 4文字目
+
+# offsetを指定（○文字目から検索する）
+string = "samurai, ruby"
+p string.index("r", 5) # 5文字目から検索
+=> 9 # 9文字目
