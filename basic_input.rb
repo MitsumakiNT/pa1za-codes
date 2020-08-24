@@ -72,3 +72,7 @@ p string.start_with?("sa")
 string = "samurai, ruby"
 p string.end_with?("by")
 => true
+
+string = "samurai, ruby"
+p string.include?("ruby")
+=> true
