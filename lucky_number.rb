@@ -23,3 +23,8 @@ for i in 1..num
       puts "blank" #はずれ
   end
 end
+
+p word_1.casecmp(word_2)
+=> -1
+p word_1.casecmp(word_3)
+=> 0

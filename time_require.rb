@@ -24,3 +24,12 @@ p date.strftime("%a %b %d %H:%M:%S %Z %Y")
 # 曜日を日本語に変更する場合
 dw = ["日", "月", "火", "水", "木", "金", "土"]
 p date.strftime("%Y/%m/%d(#{dw[date.wday]})")
+
+str = %(Programming language "Ruby")
+puts str
+# => Programming language "Ruby"
+
+ruby = "Ruby"
+str2 = %(Programming language "#{ruby}")
+puts str2
+# => Programming language "Ruby"
