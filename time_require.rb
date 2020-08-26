@@ -33,3 +33,8 @@ ruby = "Ruby"
 str2 = %(Programming language "#{ruby}")
 puts str2
 # => Programming language "Ruby"
+
+ruby = "Ruby"
+str = %q(Programming language "#{ruby}")
+puts str
+# => Programming language "#{ruby}"
