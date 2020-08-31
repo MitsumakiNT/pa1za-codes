@@ -7,3 +7,7 @@ p string_2.chomp
 => "samurai"
 p string_3.chomp
 => "samurai"
+
+string = "samurai"
+p string.chop
+=> "samurai"
