@@ -11,3 +11,7 @@ p string_3.chomp
 string = "samurai"
 p string.chop
 => "samurai"
+
+string = "hello, samurai"
+p string.delete("l")
+=> "heo, samurai"
