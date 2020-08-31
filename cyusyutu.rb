@@ -19,3 +19,7 @@ p string.delete("l")
 string = "    hello, samurai"
 p string.lstrip
 => "hello, samurai"
+
+string = "hello, samurai  \r\n"
+p string.rstrip
+=> "hello, samurai"
