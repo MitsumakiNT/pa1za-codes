@@ -27,3 +27,11 @@ p string.rstrip
 string = "  hello, samurai  \r\n"
 p string.strip
 => "hello, samurai"
+
+string = "samurai"
+p string.slice(1, 3)   # 2番目から3文字分
+=> "amu"
+
+string = "hello, samurai"
+p string.slice(7..10)  # 7文字目から10文字目まで
+=> "samu"
