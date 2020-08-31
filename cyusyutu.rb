@@ -23,3 +23,7 @@ p string.lstrip
 string = "hello, samurai  \r\n"
 p string.rstrip
 => "hello, samurai"
+
+string = "  hello, samurai  \r\n"
+p string.strip
+=> "hello, samurai"
