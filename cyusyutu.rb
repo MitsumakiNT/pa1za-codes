@@ -15,3 +15,7 @@ p string.chop
 string = "hello, samurai"
 p string.delete("l")
 => "heo, samurai"
+
+string = "    hello, samurai"
+p string.lstrip
+=> "hello, samurai"
