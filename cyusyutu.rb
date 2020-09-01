@@ -29,7 +29,7 @@ p string.strip
 => "hello, samurai"
 
 string = "samurai"
-p string.slice(1, 3)   # 2番目から3文字分
+p string.slice(1, 3)   
 => "amu"
 
 string = "hello, samurai"
