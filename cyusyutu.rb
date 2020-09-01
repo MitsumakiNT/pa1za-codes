@@ -41,3 +41,7 @@ p string.slice!(1)
 => "e"
 p string
 => "hllo, samurai"
+
+string = "さむらい"
+p string.chars
+=> ["さ", "む", "ら", "い"]
