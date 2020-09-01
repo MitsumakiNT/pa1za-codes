@@ -35,3 +35,9 @@ p string.slice(1, 3)
 string = "hello, samurai"
 p string.slice(7..10)  # 7文字目から10文字目まで
 => "samu"
+
+string = "hello, samurai"
+p string.slice!(1)
+=> "e"
+p string
+=> "hllo, samurai"
