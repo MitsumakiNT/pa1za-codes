@@ -11,3 +11,5 @@ params = {}
 params[:user] ={ name: "Onsen Ruby", email: "onsenruby@onsen.com" } 
 p params 
 # => {:user=>{:name=>"Onsen Ruby", :email=>"onsenruby@onsen.com"}}
+p params[:user][:email]  
+# => "onsenruby@onsen.com"
