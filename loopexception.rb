@@ -18,3 +18,13 @@ def all_test (str,&block)
   puts str[1]
   puts block.call(str[2])
 end
+
+print "What is the first number? "
+first_number = gets.chomp
+
+print "What is the second number? "
+second_number = gets.chomp
+
+sum = first_number + second_number
+
+print sum
