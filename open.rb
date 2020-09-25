@@ -21,7 +21,6 @@ puts '最後はEnterだけの空行にしてください'
 
 while word != ""
   word = gets.chomp
-  word << newWord
 end
 
 puts '単語をアルファベット順に並べます'
