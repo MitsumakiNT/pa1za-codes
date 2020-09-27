@@ -31,4 +31,6 @@ correct_ary = ['pen', 'pineapple', 'apple', 'pen']
 success_str = 'ペンパイナッポーアッポーペン'
 
 # 実行
-pathfinder(word_ary, correct_ary, success_str)   
+pathfinder(word_ary, correct_ary, success_str)
+
+#イニシャライズメソッドを書くべきか？
