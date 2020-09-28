@@ -50,7 +50,7 @@ def likes(names)
   end
 end
 
-# 別回答
+# 別回答（whenのがみやすい）
 
 def likes(names)
   case names.size
@@ -66,3 +66,4 @@ def likes(names)
     "#{names[0]}, #{names[1]} and #{names.size - 2} others like this"
   end
 end
+
