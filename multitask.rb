@@ -49,3 +49,5 @@ def likes(names)
     "#{names[0]}, #{names[1]} and #{others_count} others like this"   
   end
 end
+
+# 別回答
