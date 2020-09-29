@@ -15,3 +15,17 @@ p reg.pre_match
 reg = /の勉強/.match("Railsの勉強をしよう")
 p reg.post_match
 => "をしよう"
+
+p "xxxabcxxxx".slice(/a../)
+=> "abc"
+
+マッチしない場合はnilを返す
+p "xxxxxxx".slice(/a../)
+=> nil
+
+slice!はレシーバからマッチした部分を削除します。
+a = "xxxxaaaxxx"
+a.slice!(/a../)
+=> "aaa"
+p a
+=> "xxxxxx"
