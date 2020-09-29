@@ -19,13 +19,21 @@ p reg.post_match
 p "xxxabcxxxx".slice(/a../)
 => "abc"
 
-マッチしない場合はnilを返す
+# マッチしない場合はnilを返す
 p "xxxxxxx".slice(/a../)
 => nil
 
-slice!はレシーバからマッチした部分を削除します。
+# slice!はレシーバからマッチした部分を削除
 a = "xxxxaaaxxx"
 a.slice!(/a../)
 => "aaa"
 p a
 => "xxxxxx"
+
+p /aaa/ =~ "aaabbb"
+=> 0
+p /aaa/ =~ "rubyaaa"
+=> 4
+# マッチしない場合はnilを返す
+p /aaa/ =~ "ruby"
+=> nil
