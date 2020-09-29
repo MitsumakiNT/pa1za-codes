@@ -11,3 +11,7 @@ p md[0]
 reg = /の勉強/.match("Railsの勉強をしよう")
 p reg.pre_match
 => "Rails"
+
+reg = /の勉強/.match("Railsの勉強をしよう")
+p reg.post_match
+=> "をしよう"
