@@ -41,3 +41,22 @@ p /aaa/ =~ "ruby"
 string = "月月火水木金金"
 puts string.sub(/月/, "日")
 puts string
+
+
+"foobarbazfoobarbaz".scan(/ba./) {|s| p s }
+# "bar"
+# "baz"
+# "bar"
+# "baz"
+
+"foobarbazfoobarbaz".scan("ba") {|s| p s }
+# "ba"
+# "ba"
+# "ba"
+# "ba"
+
+"foobarbazfoobarbaz".scan(/(ba)(.)/) {|s| p s }
+# ["ba", "r"]
+# ["ba", "z"]
+# ["ba", "r"]
+# ["ba", "z"]
