@@ -37,3 +37,7 @@ p /aaa/ =~ "rubyaaa"
 # マッチしない場合はnilを返す
 p /aaa/ =~ "ruby"
 => nil
+
+string = "月月火水木金金"
+puts string.sub(/月/, "日")
+puts string
