@@ -42,6 +42,7 @@ string = "月月火水木金金"
 puts string.sub(/月/, "日")
 puts string
 
+# 以下リファレンスより
 
 "foobarbazfoobarbaz".scan(/ba./) {|s| p s }
 # "bar"
