@@ -37,4 +37,4 @@ print("¥n")
   end
 }
 
-print("[end]¥n")
+print("¥n")
