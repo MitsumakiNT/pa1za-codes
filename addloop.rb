@@ -13,3 +13,14 @@ p params
 # => {:user=>{:name=>"Onsen Ruby", :email=>"onsenruby@onsen.com"}}
 p params[:user][:email]  
 # => "onsenruby@onsen.com"
+
+count = 1
+
+("aa".."az").each{|str|
+  print(str + "¥n");
+
+  count += 1
+  if count > 10 then
+    break
+  end
+}
