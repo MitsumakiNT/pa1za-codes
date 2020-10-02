@@ -24,3 +24,17 @@ count = 1
     break
   end
 }
+count = 1
+
+print("¥n")
+
+("aa".."az").each{|str|
+  print(str + "¥n");
+
+  count += 1
+  if count > 10 then
+    break
+  end
+}
+
+print("[end]¥n")
