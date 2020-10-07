@@ -75,7 +75,7 @@ if ['123', 'abc', 'kkk'].index test
 end
 
 case test
-when '123', 'abc', 'kkk'
- ...
-end
+  when '123', 'abc', 'kkk'
+    ...
+  end
 
