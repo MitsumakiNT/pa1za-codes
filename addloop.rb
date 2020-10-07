@@ -66,3 +66,16 @@ for v in ["a","b","c"]
   puts v
 end
 
+if ['123', 'abc', 'kkk'].include? test
+  ...
+end
+
+if ['123', 'abc', 'kkk'].index test
+  ...
+end
+
+case test
+when '123', 'abc', 'kkk'
+ ...
+end
+
