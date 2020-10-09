@@ -79,3 +79,24 @@ case test
     ...
   end
 
+  require 'ostruct'
+
+  students = []
+  students << OpenStruct.new({name: "siman", eng: 90, math: 90, science: 90, ave: 90})
+  students << OpenStruct.new({name: "hoge", eng: 80, math: 70, science: 30, ave: 60})
+  students << OpenStruct.new({name: "piyo", eng: 0, math: 100, science: 20, ave: 40})
+  
+  group = students.group_by do |student|
+    case student.ave
+    when 0...20
+      "E"
+    when 20...40
+      "D"
+    when 40...60
+      "C"
+    when 60...80
+      "B"
+    when 80..100
+      "A"
+    end
+  end
