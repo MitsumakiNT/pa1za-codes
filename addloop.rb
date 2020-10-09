@@ -100,3 +100,14 @@ case test
       "A"
     end
   end
+
+  group.each do |rank, students|
+    students.each do |student|
+      puts "#{student.name}さんのランクは#{rank}です。"
+      puts "英語の得点 : %3d点" % [student.eng]
+      puts "数学の得点 : %3d点" % [student.math]
+      puts "科学の得点 : %3d点" % [student.science]
+      puts "    平均点 : %3d点" % [student.ave]
+      puts "------------------------------------------"
+    end
+  end
