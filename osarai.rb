@@ -16,3 +16,9 @@ end
 # 条件分岐応用
 a! = b #aとbが等しくない場合
 # 例　10! == 1
+
+# 複数ぎょう標準入力取得
+while line = gets
+	line.chomp!
+	puts "#{line}が現れた"
+end
