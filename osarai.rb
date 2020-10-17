@@ -12,3 +12,7 @@ if number == 1
 else
     puts "嫌い"
 end
+
+# 条件分岐応用
+a! = b #aとbが等しくない場合
+# 例　10! == 1
