@@ -58,3 +58,20 @@ enemy_img.each do |img|
     end
     puts ""
 end
+
+num = gets.to_i
+total_sum = 0
+input_sum = 0
+for i in 1..num
+  input = gets.split(' ').map(&:to_i)
+  if input[0] == input[1]
+      input_sum = input[0] * input[1]
+      
+  else
+      input_sum = input[0] + input[1]
+  end
+  
+  total_sum = total_sum + input_sum
+end
+
+puts total_sum
