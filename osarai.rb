@@ -107,3 +107,34 @@ end
 ans = victims.find{|k,v| k == name}
 puts "#{ans[0]} #{ans[1]}"
     
+
+# 二つのハッシュをまたいで判別
+user = gets.chomp
+u_total = gets.to_i
+
+u_sort = {}
+matcher = 0
+
+(1..u_total).each do
+  array = gets.chomp.split(' ')
+  u_sort[array[0]] = array[1]
+#   p array[0]
+  if array[0] == user then
+      matcher = array[1] #対応させたい血液型の抽出
+  end
+end
+# p u_sort {"Kyoko"=>"B", "Rio"=>"O", "Tsubame"=>"AB", "KurodaSensei"=>"A", "NekoSensei"=>"A"}
+
+f_total = gets.to_i
+
+f_sort = {}
+(1..f_total).each do 
+    fortune = gets.chomp.split(" ")
+            # p fortune   ["A", "red"]
+            #             ["B", "green"]
+            #             ["O", "blue"]
+            #             ["AB", "yellow"]
+    if fortune[0] == matcher
+        puts fortune[1]
+    end
+end
