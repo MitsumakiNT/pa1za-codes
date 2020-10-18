@@ -22,3 +22,9 @@ while line = gets
 	line.chomp!
 	puts "#{line}が現れた"
 end
+
+#mapメソッド基本
+results２ = numbers.map do |item|
+  item * 10
+end
+p results2
