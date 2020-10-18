@@ -138,3 +138,5 @@ f_sort = {}
         puts fortune[1]
     end
 end
+#標準入力例　7777 を　[7,7,7,7] で出力する
+cards = gets.chomp.split("").map(&:to_i)
