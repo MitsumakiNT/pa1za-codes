@@ -28,3 +28,33 @@ results２ = numbers.map do |item|
   item * 10
 end
 p results2
+
+numbers = Array.new(10, Array.new(3,1))
+p numbers
+
+numbers = Array.new(4).map{Array.new(3,1)}
+p numbers
+
+numbers[0][1] = 2
+p numbers
+
+enemy_img = [[0,0,1,1,1,1,1,1,1,1,1,1,1,1,0,0],
+             [1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1],
+             [1,0,0,1,1,1,0,0,0,1,1,1,0,0,0,1],
+             [1,1,0,0,0,0,1,1,0,0,0,0,0,0,1,1],
+             [0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0],
+             [0,0,0,1,1,1,0,0,0,0,0,1,1,1,0,0],
+             [0,0,0,0,1,1,1,0,0,0,0,0,0,1,1,1]]
+
+enemy_img.each do |img|
+    
+    img.each do |dot|
+        
+        if dot == 1
+            print "#"
+        else
+            print " "
+        end
+    end
+    puts ""
+end
