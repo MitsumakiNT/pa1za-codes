@@ -59,6 +59,7 @@ enemy_img.each do |img|
     puts ""
 end
 
+#じしょトレーニング
 num = gets.to_i
 total_sum = 0
 input_sum = 0
@@ -90,3 +91,19 @@ end
 user2blood.each do |key, value|
   puts "#{key} #{value}"
 end
+
+name = gets.chomp
+
+total = gets.to_i
+
+victims = {}
+
+for i in 1..total
+  input = gets.chomp.split(" ")
+   victims[input[0]] = input[1]
+end
+# p victims
+
+ans = victims.find{|k,v| k == name}
+puts "#{ans[0]} #{ans[1]}"
+    
