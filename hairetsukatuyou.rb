@@ -1,4 +1,4 @@
-#配列のindexを指定してその中身を入れ替える
+#配列のindexを２つ指定してその中身を入れ替える
 num = gets.to_i
 array = []
 for i in 1..num
@@ -21,6 +21,21 @@ a,b = b,a#数字入れ替え
 array[index_alpha] = a
 
 array[index_beta] = b
+array.each do |s|
+    puts s
+end
+
+#配列のindexを指定して対応するindexに数値をいれる
+array = []
+times = gets.to_i
+for i in 1..times
+  num = gets.to_i
+  array.push(num)
+end
+line = gets.split(" ").map(&:to_i)
+n = line[0]
+B = line[1]
+array.insert(n,B)
 array.each do |s|
     puts s
 end
