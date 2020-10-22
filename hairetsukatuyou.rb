@@ -61,3 +61,9 @@ numbers2 = numbers.map do |num |
 end
 
 p numbers2
+
+#二次元配列作成
+numbers = Array.new(4).map{Array.new(3,1)}　#→mapを使わないと個々の配列を独立して操作できない
+p numbers
+# [[1, 1, 1], [1, 1, 1], [1, 1, 1], [1, 1, 1]]
+
