@@ -39,3 +39,15 @@ array.insert(n,B)
 array.each do |s|
     puts s
 end
+
+#台風の襲来日数の間隔を計算　→　特に苦手気味な処理なので残す、indexの指定とループの処理
+times = 5
+typhoon = []
+for i in 0..4
+  day = gets.to_i
+  typhoon.push(day)
+  if i >= 1
+      ans = typhoon[i] - typhoon[(i - 1)]
+      puts ans
+  end
+end
