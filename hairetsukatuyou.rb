@@ -69,3 +69,6 @@ p numbers
 
 #三次元配列作成
 tri = (0...a).map{(0..b).map{Array.new(c)}}
+
+lines = readlines.map{|line| line.split(' ')}
+lines = readlines.map{|line| line.split(' ').map(&:to_i)}
