@@ -114,7 +114,7 @@ end
 stations = stations.uniq.select{|s| eki_eki_cost.keys.include?(s)}
 stations_to_index = stations.each_with_index.to_h
 
-# set cost to adjacent graph
+# set cost to adjacent graph or assistant
 ag = Array.new(stations.size).map{Array.new(stations.size,INF)}
 eki_eki_cost.each do |s1, s2etc|
   i = stations_to_index[s1]
